@@ -6,10 +6,10 @@ import Item from "../components/Item";
 function Homepage() {
   return (
     <div>
-      <h1>New Finds</h1>
+      <h1>Our Favorites</h1>
       <Row>
         {productCatalog.map((product) => (
-          <Col key={product._id} sm={12} md={6} lg={3}>
+          <Col key={product._id} xs={12} md={6} lg={4}>
             <Item item={product} />
           </Col>
         ))}
